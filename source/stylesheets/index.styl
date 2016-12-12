@@ -36,12 +36,6 @@ body
 .main-content
   max-width 750px
   margin 50px auto
-  p
-    margin-top 50px
-    margin-right 10%
-    margin-left 10%
-    line-height 1.6
-    margin-bottom 1.7em
 
 .footer
   max-width 750px
@@ -53,3 +47,40 @@ body
 .icon
   padding 0px
   margin-right 10px
+
+#command
+  font-size 17px
+
+.type-wrap
+  margin 5% auto
+  padding 20px
+  background black
+  border-radius 5px
+  text-align left
+
+.terminal
+  color white
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+

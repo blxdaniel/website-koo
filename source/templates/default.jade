@@ -12,4 +12,18 @@ html
       block content
 
     .footer
-      block footer
+      block footer 
+
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+  script(src = "/source/js/typed.js")
+  script(type = "text/JavaScript").
+      $(document).ready(function () {
+          // terminal animation at the top
+          $(function(){
+            $("#command").typed({
+              strings: ["man daniel koo <br> ^800 <br>My name is Daniel Koo. Junior at UCSD majoring in Math-Computer. I will be working for GE as a software developer inten summer of 2017! Go Tritons! Links down below."],
+              typeSpeed: 15,
+              startDelay: 1000
+            });
+          });
+      });

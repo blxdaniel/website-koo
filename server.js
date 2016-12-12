@@ -3,9 +3,11 @@ var express = require('express')
   , app = express()
   , template = require('jade').compileFile(__dirname + '/source/templates/homepage.jade')
 
+
 app.use(logger('dev'))
 app.use(express.static(__dirname + '/static'))
 app.use('/source/img', express.static(__dirname + "/source/img"));
+app.use('/source/js', express.static(__dirname + "/source/js"));
 
 app.get('/', function (req, res, next) {
   try {
