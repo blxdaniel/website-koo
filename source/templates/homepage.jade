@@ -13,3 +13,16 @@ block footer
             img(src="/source/img/GitHub-Mark-64px.png")
         li: a(href="https://www.linkedin.com/in/koodaniel" style="padding: 0px; margin-right: 10px")
             img(src="/source/img/In-Black-115px-R.png")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src = "/source/js/typed.js")
+    script(type = "text/JavaScript").
+        $(document).ready(function () {
+            // terminal animation at the top
+            $(function(){
+                $("#command").typed({
+                    strings: ["man daniel_koo <br> ^800 <br>Hello. My name is Daniel Koo.^500 Junior at UCSD majoring in Math-Computer Science. ^500I will be working for GE as a software developer inten summer of 2017! ^500Go Tritons! <br>Links down below."],
+                    typeSpeed: 15,
+                    startDelay: 1000
+                });
+            });
+        });
