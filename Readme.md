@@ -1,6 +1,7 @@
 #Learning Node.js while creating my own personal project
 
 This is gonna be a lot of work 
-Using Jade, Sytlus and Express to learn Node.
+Using Jade, Sytlus and Express to learn Node.js.
+Heroku to run the webpage!
 
-Thanks to a bengourley for the tutorial and resource code to help me get started forked from his repo
+Thanks to a bengourley for the tutorial and resource code to help me get started forked from his repo.
