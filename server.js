@@ -5,6 +5,7 @@ var express = require('express')
 
 app.use(logger('dev'))
 app.use(express.static(__dirname + '/static'))
+app.use('/source/img', express.static(__dirname + "/source/img"));
 
 app.get('/', function (req, res, next) {
   try {
@@ -16,17 +17,15 @@ app.get('/', function (req, res, next) {
   }
 })
 
-app.get('/contact', function (req, res, next) {
+app.get('/project', function (req, res, next) {
   try {
-    template = require('jade').compileFile(__dirname + '/source/templates/contactinfo.jade')
-    var html = template({ title: 'Conatct Me' })
+    template = require('jade').compileFile(__dirname + '/source/templates/projectinfo.jade')
+    var html = template({ title: 'Projects' })
     res.send(html)
   } catch (e) {
     next(e)
   }
 })
-
-
 
 app.listen(process.env.PORT || 3000, function () {
   console.log('Listening on http://localhost:' + (process.env.PORT || 3000))

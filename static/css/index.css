@@ -16,8 +16,9 @@ body .page-title {
   color: #fff;
 }
 .nav {
-  background: #000;
+  background: #fff;
   text-align: center;
+margin
 }
 .nav li {
   display: inline-block;
@@ -25,12 +26,10 @@ body .page-title {
 .nav a {
   display: inline-block;
   padding: 20px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 .nav a:hover {
-  background-color: #fff;
-  color: #000;
   text-decoration: underline;
 }
 .main-content {
@@ -47,10 +46,13 @@ body .page-title {
 .footer {
   max-width: 750px;
   margin: 50px auto;
-  border-top: 1px solid #444;
-  padding: 20px 0;
+  text-align: center;
 }
-.footer p {
-  color: #444;
-  margin-left: 10%;
+.footer img {
+  max-width: 25px;
+  height: auto;
+}
+.icon {
+  padding: 0px;
+  margin-right: 10px;
 }
