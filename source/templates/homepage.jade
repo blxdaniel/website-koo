@@ -2,13 +2,36 @@ extend default
 
 block content
     .terminal.type-wrap
-        div
-            span#command
+        div#command-string
+            p.
+                man danielk^800
+        span#command
+
+        p.
+            <br>
+            Name: Daniel Koo<br>Major: Math-Computer Science
+            <br>School: University of California, San Diego
+            <br>
+            <br>Description:
+            <br>
+            <br> Hi! I was born and raised in
+            the Bay Area and atttened Berkeley High School.
+            I attended Diablo Valley College for 3 years
+            before transfering to UCSD. I have a passion of computer science.
+            I'm am currently learning everything that I can about the field
+            and enjoying every moment of it so far!
+            I will be interning for GE in the summer of 2017. I love
+            to rock climb and recently have gotten into surfing. If you
+            have any questions, feel free to message me on Linkedin.
+        p(style = "text-align: center").
+            <br>
+            Happy Holidays!
+
 
 block footer
     ul.nav
         li: a(href="https://www.facebook.com/blxdaniel" style="padding: 0px; margin-right: 10px")
-                img(src="/source/img/facebook-icon.png")
+            img(src="/source/img/facebook-icon.png")
         li: a(href="https://www.github.com/blxdaniel" style="padding: 0px; margin-right: 10px")
             img(src="/source/img/GitHub-Mark-64px.png")
         li: a(href="https://www.linkedin.com/in/koodaniel" style="padding: 0px; margin-right: 10px")
@@ -21,7 +44,7 @@ block footer
             // terminal animation at the top
             $(function(){
                 $("#command").typed({
-                    strings: ["man daniel_koo <br> ^800 <br>Hello. My name is Daniel Koo.^500 Junior at UCSD majoring in Math-Computer Science. ^500I will be working for GE as a software developer inten summer of 2017! ^500Go Tritons! <br>Links down below."],
+                    stringsElement: $('#command-string'),
                     typeSpeed: 15,
                     startDelay: 1000
                 });
