@@ -14,6 +14,7 @@
   },
   "author": "Daniel Koo",
   "dependencies": {
+    "jQuery": "1.7.2",
     "express": "^4.13.4",
     "jade": "^1.11.0",
     "morgan": "^1.7.0",
