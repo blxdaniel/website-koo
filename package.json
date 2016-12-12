@@ -1,7 +1,7 @@
 {
-  "name": "simple-website-2016",
+  "name": "personal-website",
   "version": "1.0.0",
-  "description": "A simple website in node js",
+  "description": "personal website in node",
   "private": "true",
   "main": "server.js",
   "scripts": {
