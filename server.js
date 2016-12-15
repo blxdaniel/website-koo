@@ -22,7 +22,7 @@ app.get('/', function (req, res, next) {
 app.get('/project', function (req, res, next) {
   try {
     template = require('jade').compileFile(__dirname + '/source/templates/projectinfo.jade')
-    var html = template({ title: 'Projects' })
+    var html = template({ title: 'Experence' })
     res.send(html)
   } catch (e) {
     next(e)
